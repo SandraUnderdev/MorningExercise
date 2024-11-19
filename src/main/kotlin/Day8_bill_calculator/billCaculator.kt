@@ -9,12 +9,16 @@ fun billCalculator(menuItem: List<Price>) {
 
     while (true) {
         println("\nEnter a food item: ")
-        userInput = readln()
+        userInput = readln().toLowerCase()
         if (userInput.isNotBlank()) {
             for (menu in menuItem) {
-                if (userInput.contains(menu.name)) {
+                if (userInput.contains(menu.name.toLowerCase())) {
                     val price = menu.price
                     priceList += price
+                }
+                else {
+                    println("\nFood not in list: ")
+                    break
                 }
             }
         } else {
