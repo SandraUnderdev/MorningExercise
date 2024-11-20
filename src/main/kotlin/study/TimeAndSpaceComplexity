@@ -1,0 +1,82 @@
+Simplest Explanation of Time Complexity and Space Complexity
+1. Time Complexity: "How long does it take to finish?"
+
+Time complexity measures how the runtime of an algorithm grows as the size of the input increases.
+Examples:
+
+    O(1) (Constant Time):
+        The algorithm takes the same amount of time, no matter the input size.
+        Example: Accessing a specific element in an array (arr[5]).
+
+    O(n) (Linear Time):
+        The time taken grows proportionally with the size of the input.
+        Example: Looping through all elements in an array of size n.
+
+    O(n²) (Quadratic Time):
+        The time taken grows exponentially with the input size.
+        Example: Nested loops where each loop iterates over the entire input.
+
+2. Space Complexity: "How much extra memory does it need?"
+
+Space complexity measures how much additional memory (besides the input) an algorithm uses.
+Examples:
+
+    O(1) (Constant Space):
+        The algorithm uses the same amount of memory, regardless of input size.
+        Example: Swapping elements in an array in-place.
+
+    O(n) (Linear Space):
+        The algorithm uses memory proportional to the size of the input.
+        Example: Creating a new list to store results while iterating through an array.
+
+Simplest Explanation of Time Complexity and Space Complexity
+1. Time Complexity: "How long does it take to finish?"
+
+Time complexity measures how the runtime of an algorithm grows as the size of the input increases.
+Examples:
+
+    O(1) (Constant Time):
+        The algorithm takes the same amount of time, no matter the input size.
+        Example: Accessing a specific element in an array (arr[5]).
+
+    O(n) (Linear Time):
+        The time taken grows proportionally with the size of the input.
+        Example: Looping through all elements in an array of size n.
+
+    O(n²) (Quadratic Time):
+        The time taken grows exponentially with the input size.
+        Example: Nested loops where each loop iterates over the entire input.
+
+2. Space Complexity: "How much extra memory does it need?"
+
+Space complexity measures how much additional memory (besides the input) an algorithm uses.
+Examples:
+
+    O(1) (Constant Space):
+        The algorithm uses the same amount of memory, regardless of input size.
+        Example: Swapping elements in an array in-place.
+
+    O(n) (Linear Space):
+        The algorithm uses memory proportional to the size of the input.
+        Example: Creating a new list to store results while iterating through an array.
+
+How It Relates to Your Function
+Time Complexity: O(n)
+
+    The function iterates through the list once (or half, but constants are ignored in Big-O).
+    Every element is accessed and swapped once, which takes linear time.
+
+Space Complexity: O(1)
+
+    No new list or data structure is created; the algorithm modifies the input ArrayList directly.
+    Only a few variables (start, end, temp) are used, so the extra memory required is constant.
+
+Key Analogy
+
+    Time Complexity: How long it takes to wash dishes if you have 10 dishes versus 100 dishes.
+        Washing one dish at a time is O(n): More dishes mean more time.
+        If you have a robot that always washes one dish in 5 seconds, that’s O(1) per dish.
+
+    Space Complexity: How much sink space you need to wash the dishes.
+        If you reuse the same sink and water, it’s O(1).
+        If you need a separate sink for every dish, it’s O(n).
